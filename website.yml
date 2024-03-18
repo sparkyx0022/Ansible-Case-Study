@@ -1,0 +1,9 @@
+---
+- hosts: apache
+  become: true
+  roles:
+    - apache_role
+- hosts: nginx
+  become: true
+  roles:
+    - nginx_role
